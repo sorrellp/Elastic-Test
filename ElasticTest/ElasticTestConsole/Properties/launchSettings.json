@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ElasticTestConsole": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
