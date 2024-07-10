@@ -7,10 +7,12 @@
     <ProjectGuid>c5355dc9-2fff-45a2-9e64-3def8eaf225a</ProjectGuid>
   </PropertyGroup>
   <ItemGroup>
+    <None Include=".env" />
     <None Include="docker-compose.override.yml">
       <DependentUpon>docker-compose.yml</DependentUpon>
     </None>
     <None Include="docker-compose.yml" />
     <None Include=".dockerignore" />
+    <None Include="setup\Dockerfile" />
   </ItemGroup>
 </Project>
