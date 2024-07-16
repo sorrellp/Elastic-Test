@@ -11,6 +11,16 @@ services:
     networks:
       - elk
 
+  elastictestapi:
+    image: ${DOCKER_REGISTRY-}webapplication1
+    build:
+      context: .
+      dockerfile: WebApplication1/Dockerfile
+    depends_on:
+        - elasticsearch
+    networks:
+      - elk
+
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.14.1
     environment:
